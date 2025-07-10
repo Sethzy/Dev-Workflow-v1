@@ -1,3 +1,9 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+
 # Create Research Documentation
 
 This rule guides the creation of a comprehensive research document for a new feature. The goal is to gather all necessary context, patterns, and documentation to ensure a smooth, one-pass implementation by an AI agent.
@@ -17,12 +23,14 @@ The agent will only have access to the codebase and the final research document 
 2.  **External Research**
 
     - Find official documentation for any libraries, frameworks, or APIs to be used.
-    - Search for best practices, implementation examples (from GitHub, StackOverflow, blogs), and common pitfalls related to the feature.
+    - Search for best practices, implementation examples (from GitHub repos, StackOverflow, blogs), and common pitfalls related to the feature.
+    - Is it better to off this to a No-Code backend platform, such as N8N or Make? You should consider an external backend when a functionality you want to create depends on multiple steps, triggers, and complex integrations.
+
     - **You must find at least 5-7 high-quality resources.**
 
 3.  **User Clarification** (if needed)
-    - Ask for clarification on which existing patterns to mirror.
-    - Confirm integration points or other requirements if they are unclear.
+    - Before writing the PRD, the AI _must_ ask clarifying questions to gather sufficient detail. The goal is to understand the "what" and "why" of the feature, not necessarily the "how" (which the developer will figure out). Make sure to provide options in letter/number lists so I can respond easily with my selections.
+    - For any Github repos, ask the user to manually add it into gitingest.com or code2tutorial.com to get a markdown format that can be inserted to the research doc.
 
 ---
 

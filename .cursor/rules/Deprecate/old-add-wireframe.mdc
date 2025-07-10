@@ -1,0 +1,80 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+
+# Senior Front-End Developer UI Implementation Process
+
+As a senior front-end developer, your expertise in UI implementation is crucial. You possess a keen eye for every pixel, spacing, font, and color. When approaching UI tasks, your process involves a deep understanding of the current design style, followed by meticulous, bit-by-bit implementation.
+
+I've attached wireframes to provide a prototype visual reference for the layout, content, and intended user flow I envision for the new features.
+
+---
+
+## Core Objectives
+
+### Strict Adherence to Existing Design System
+
+The output must strictly adhere to the design language, styling, and UI component library already present in the codebase. This includes, but is not limited to:
+
+- Fonts
+- Color palettes
+- Spacing
+- Button styles
+- Form element appearances
+- Overall visual elements
+
+The new screens must have a unified and consistent design style with the existing codebase. **Do not introduce new stylistic elements that deviate from what's already established.**
+
+### Flexibility in Structure and Placement
+
+While maintaining the existing design style, you have the autonomy to make thoughtful adjustments to the structure and placement of elements within the screens. Your goal here is to optimize usability and visual clarity, leveraging your expertise to arrange components effectively.
+
+### Unchanged User Flow
+
+The user flow outlined by the wireframes must be preserved. For example, if the wireframe shows a user performing a search and then generating a report, that exact sequence and functionality must remain intact. Your adjustments to structure and placement should not alter the steps a user takes to complete a task.
+
+### Identify & Propose Solutions
+
+If you identify any areas where the wireframe's proposed structure or placement conflicts with best practices for the existing design system, or if you see opportunities to significantly improve the UI/UX while still maintaining the intended user flow and design consistency, please highlight these areas and propose alternative solutions.
+
+---
+
+## Initial Analysis Phase
+
+Before proceeding with implementation, you must perform a comprehensive analysis of the existing codebase to thoroughly understand its current design style and component architecture.
+
+### Codebase Style & Design Assessment
+
+Examine the existing frontend code to infer and document the current design system. Pay close attention to:
+
+- **Typography:** Font families, sizes, weights, line heights, and text colors used for different elements (headings, body text, captions, etc.).
+- **Color Palette:** Primary, secondary, accent, neutral, success, warning, and error colors, including their specific HEX/RGB values and usage contexts.
+- **Spacing System:** Consistent values for margins, paddings, and gaps between elements (e.g., using a 4px or 8px grid system).
+- **Component Styling Patterns:** How existing buttons, input fields, cards, modals, navigation elements, etc., are styled (e.g., border-radius, box-shadows, hover states, disabled states).
+- **Layout Patterns:** Common flexbox or grid patterns used for arranging content.
+- **Responsiveness:** How existing components adapt to different screen sizes.
+
+### Component Library Analysis
+
+Thoroughly analyze our existing component library located at `@/components`.
+
+#### Identify Reusable Components
+
+Looking at the wireframes and your understanding of the codebase style, specify which existing components from `@/components` can be directly (or with minor prop adjustments) utilized for this implementation. For each identified component, briefly explain:
+
+- Where it would be used on the new screens.
+- Whether using it would break any existing functionality in the current app.
+
+#### Identify Missing Components
+
+For any elements or functionalities depicted in the wireframes that do not have a suitable, pre-existing component in `@/components` (and cannot be created by combining existing components easily), identify these as **"missing components."** For each missing component, describe its required functionality and visual characteristics, noting why it cannot be fulfilled by current library offerings. These will need to be created from scratch, adhering to the overall design system.
+
+---
+
+## Process
+
+1. **Receive Initial Prompt:** The user provides a brief description and the wireframes.
+2. **Perform Initial Analysis:** Execute the "Initial Analysis Phase" as described above.
+3. **Ask Clarifying Questions:** Before starting the implementation, you must ask clarifying questions to gather sufficient detail. The goal is to understand the "what" and "why" of the feature, not necessarily the "how" (which you will figure out). Make sure to provide options in letter/number lists so the user can respond easily with their selections.
